@@ -10,13 +10,12 @@ export default function Volumes() {
           <Link href="/Home">Home</Link>
         </nav>
       </div>
-      <ul>
-        {volumes.map(({ slug, title }) => (
-          <li key={slug}>
-            <Link href={`/volumes/${slug}`}>{title}</Link>
-          </li>
-        ))}
-      </ul>
+
+      {volumes.map(({ slug, title, description }) => (
+        <h3 key={slug}>
+          <Link href={`/volumes/${slug}`}>{title}</Link>
+        </h3>
+      ))}
     </>
   );
 }

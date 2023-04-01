@@ -1,10 +1,8 @@
 import Link from "next/link";
 import { volumes } from "../../lib/data";
 import Image from "next/image";
-export default function VolumeOne() {
-  const volData = volumes.find(
-    ({ slug }) => slug === "the-fellowship-of-the-ring"
-  );
+export default function VolumeTwo() {
+  const volData = volumes.find(({ slug }) => slug === "the-two-towers");
   return (
     <>
       <div>
@@ -25,7 +23,10 @@ export default function VolumeOne() {
         </ul>
         <Image src={volData.cover} width={140} height={230} alt="cover" />
       </div>
-      <Link href="/volumes/the-return-of-the-king">NEXT</Link>
+      <nav>
+        <Link href="/volumes/the-fellowship-of-the-ring">BACK</Link>
+        <Link href="/volumes/the-return-of-the-king">NEXT</Link>
+      </nav>
     </>
   );
 }
