@@ -25,6 +25,7 @@ export default function VolumeTwo() {
       </div>
       <nav>
         <Link href="/volumes/the-fellowship-of-the-ring">BACK</Link>
+        <p>Browse</p>
         <Link href="/volumes/the-return-of-the-king">NEXT</Link>
       </nav>
     </>

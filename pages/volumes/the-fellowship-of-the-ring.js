@@ -25,7 +25,7 @@ export default function VolumeOne() {
         </ul>
         <Image src={volData.cover} width={140} height={230} alt="cover" />
       </div>
-      <Link href="/volumes/the-return-of-the-king">NEXT</Link>
+      <Link href="/volumes/the-two-towers">NEXT</Link>
     </>
   );
 }
